@@ -5,14 +5,14 @@ contract ValidatorClass {
     address[] public disabledValidators;
     
     struct Validator {
-        bytes fullName;
-        bytes streetName;
-        bytes state;
+        string fullName;
+        string streetName;
+        string state;
         uint zip;
-        bytes licenseID;
+        string licenseID;
         uint licenseExpiredAt;
         uint disablingDate;
-        bytes disablingTX;
+        string disablingTX;
     }
     
     mapping(address => Validator) public validator;
